@@ -1,0 +1,6 @@
+import cv2 as cv
+import numpy as np
+img=cv.imread(r'G:\DL SURAJ\1.jpeg',0)
+equ=cv.equalizeHist(img)
+res=np.hstack((img,equ))
+cv.imwrite(r'G:\DL SURAJ\res.png',res)
